@@ -1,0 +1,11 @@
+.about__text::after {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 96px;
+    height: 4px;
+    background-color: rgb(250,204,51);
+    border-radius: 20px;
+}
