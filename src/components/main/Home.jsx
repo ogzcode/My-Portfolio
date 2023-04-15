@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import bg from "../../image/home-bg.svg";
 
 function Home() {
@@ -11,7 +12,7 @@ function Home() {
                     kullanıcı dostu arayüzler oluşturmak için HTML, CSS ve JavaScript 
                     gibi teknolojileri kullanıyorum.
                 </p>
-                <a href="" className="bg-yellow-400 px-12 py-4 text-xl uppercase rounded-md text-white font-medium transition-colors shadow-lg hover:bg-yellow-500">Projeler</a>
+                <Link to={"/project"} className="bg-yellow-400 px-12 py-4 text-xl uppercase rounded-md text-white font-medium transition-colors shadow-lg hover:bg-yellow-500">Projeler</Link>
             </div>
         </main>
     );
