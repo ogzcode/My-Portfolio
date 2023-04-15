@@ -9,6 +9,7 @@ import day6 from "./img/day6.svg";
 import day7 from "./img/day7.svg";
 import day8 from "./img/day8.svg";
 import day9 from "./img/day9.svg";
+import day10 from "./img/day10.svg";
 
 function Card({ count, img }) {
     return (
@@ -20,7 +21,7 @@ function Card({ count, img }) {
 }
 
 function Design() {
-    const data = [day1, day2, day3, day4, day5, day6, day7, day8, day9];
+    const data = [day1, day2, day3, day4, day5, day6, day7, day8, day9, day10];
     return (
         <div className="min-h-screen py-6">
             <div className="relative flex justify-center items-center h-[50vh]">
