@@ -10,18 +10,25 @@ import day7 from "./img/day7.svg";
 import day8 from "./img/day8.svg";
 import day9 from "./img/day9.svg";
 import day10 from "./img/day10.svg";
+import day11 from "./img/day11.svg";
+import day12 from "./img/day12.svg";
+import day13 from "./img/day13.svg";
+import day14 from "./img/day14.svg";
+import day15 from "./img/day15.svg";
 
 function Card({ count, img }) {
     return (
         <div className="w-[360px] h-[360px] relative shadow-lg rounded-lg overflow-hidden flex justify-center items-center">
             <img src={img} className=""/>
-            <p className="absolute bottom-0 left-0 w-full text-center text-xl text-slate-800 py-2 bg-white">Day {count}</p>
+            <p className="absolute bottom-0 left-0 w-full text-center text-xl text-slate-800 py-1 bg-white">Day {count}</p>
         </div>
     );
 }
 
 function Design() {
-    const data = [day1, day2, day3, day4, day5, day6, day7, day8, day9, day10];
+    const data = [day1, day2, day3, day4, day5, day6, day7, day8, day9, day10, day11,
+        day12, day13, day14, day15
+    ];
     return (
         <div className="min-h-screen py-6">
             <div className="relative flex justify-center items-center h-[50vh]">
