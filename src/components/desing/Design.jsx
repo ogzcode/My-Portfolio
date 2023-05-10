@@ -17,6 +17,7 @@ import day14 from "./img/day14.svg";
 import day15 from "./img/day15.svg";
 import day16 from "./img/day16.svg";
 import day17 from "./img/day17.svg";
+import day18 from "./img/day18.svg";
 
 function Card({ count, img }) {
     return (
@@ -29,7 +30,7 @@ function Card({ count, img }) {
 
 function Design() {
     const data = [day1, day2, day3, day4, day5, day6, day7, day8, day9, day10, day11,
-        day12, day13, day14, day15, day16, day17
+        day12, day13, day14, day15, day16, day17, day18
     ];
     return (
         <div className="min-h-screen py-6">
