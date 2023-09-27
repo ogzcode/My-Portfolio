@@ -1,4 +1,4 @@
-import NavBar from "./components/navBar";
+import NavBar from "./components/NavBar";
 import Tools from "./components/Tools";
 import Timeline from "./components/Timeline";
 import Contact from "./components/Contact";
