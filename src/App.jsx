@@ -1,16 +1,21 @@
-import './App.css';
-import Header from './components/Header';
-import Contact from './components/Contact';
-import { Outlet } from 'react-router-dom';
+import NavBar from "./components/navBar";
+import Tools from "./components/Tools";
+import Timeline from "./components/Timeline";
+import Contact from "./components/Contact";
+import About from "./components/About";
+import { Divider } from "./components/Divider";
 
-function App() {
-  return (
-    <div className="App">
-     <Header/>
-     <Outlet/>
-     <Contact/>
-    </div>
-  )
+export default function App() {
+    return (
+        <div className="min-h-screen bg-stone-100">
+            <NavBar />
+            <About />
+            <Divider />
+            <Tools />
+            <Divider />
+            <Timeline />
+            <Divider />
+            <Contact />
+        </div>
+    )
 }
-
-export default App
