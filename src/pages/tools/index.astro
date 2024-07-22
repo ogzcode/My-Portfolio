@@ -1,0 +1,81 @@
+---
+import PageLayout from '@/layouts/BaseLayout.astro'
+import ToolSection from '@/components/ToolSection.astro'
+import Button from '@/components/Button.astro'
+import Section from '../../components/Section.astro'
+import ProjectCard from '../../components/ProjectCard.astro'
+---
+
+<PageLayout meta={{ title: 'Projects' }}>
+	<div class='w-full'>
+		<Button title='Back' href='/' style='button'>
+			<svg
+				xmlns='http://www.w3.org/2000/svg'
+				width='14'
+				height='14'
+				viewBox='0 0 24 24'
+				slot='icon-before'
+			>
+				<path
+					fill='currentColor'
+					d='m6.921 12.5l5.792 5.792L12 19l-7-7l7-7l.713.708L6.921 11.5H19v1z'
+				>
+				</path>
+			</svg>
+		</Button>
+
+		<div class='mt-5 flex w-full flex-col gap-y-10'>
+			<div>
+				<h1 class='mb-1 text-2xl font-bold'>Projects</h1>
+				<p>My personel projects that I have worked on. Some of them are still in progress.</p>
+			</div>
+
+			<div class='grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-6'>
+				<ProjectCard
+					href='https://github.com/ogzcode/Full-Stack-Food-Order-App'
+					heading='Full Stack Food Order'
+					subheading='A full stack food order app with React, Node.js, Express.js, SQLite'
+					imagePath='/src/assets/coming-soon.png'
+					altText='Example'
+					class='w-full'
+				>
+					<ul class='list-disc text-muted-foreground'>
+						<li>
+							Developed a comprehensive food ordering application using modern web technologies.
+						</li>
+						<li>
+							Features both <strong>user</strong> and <strong>admin</strong> interfaces, allowing users
+							to place orders and admins to manage the system.
+						</li>
+						<li>
+							Implemented <strong>CRUD</strong> operations for managing food items, orders, and users.
+						</li>
+					</ul>
+				</ProjectCard>
+				<ProjectCard
+					href='https://github.com/ogzcode/WordHub'
+					heading='WordHub'
+					subheading='A vocabulary learning app built with Vue and Supabase'
+					imagePath='/src/assets/coming-soon.png'
+					altText='WordHub App'
+					class='w-full'
+				>
+					<ul class='list-disc text-muted-foreground'>
+						<li>
+							Developed a vocabulary learning application using <strong>Vue</strong> and <strong
+								>Supabase</strong
+							>.
+						</li>
+						<li>
+							Allows users to store English words and generate example sentences for each word.
+						</li>
+						<li>
+							Features interactive games and quizzes to help users practice and learn new
+							vocabulary.
+						</li>
+					</ul>
+				</ProjectCard>
+			</div>
+		</div>
+	</div>
+</PageLayout>
