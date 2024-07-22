@@ -12,7 +12,7 @@ import icon from 'astro-icon'
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://github.com/ogzcode',
-	base: "/",
+	base: "/oguzhanGuc",
 	integrations: [
 		expressiveCode(expressiveCodeOptions),
 		tailwind({
