@@ -1,8 +1,6 @@
 ---
 import PageLayout from '@/layouts/BaseLayout.astro'
-import ToolSection from '@/components/ToolSection.astro'
 import Button from '@/components/Button.astro'
-import Section from '../../components/Section.astro'
 import ProjectCard from '../../components/ProjectCard.astro'
 ---
 
@@ -73,6 +71,25 @@ import ProjectCard from '../../components/ProjectCard.astro'
 							Features interactive games and quizzes to help users practice and learn new
 							vocabulary.
 						</li>
+					</ul>
+				</ProjectCard>
+				<ProjectCard
+					href='https://github.com/ogzcode/Cloppy'
+					heading='Cloppy'
+					subheading='Clipboard application developed using Electron.js for Linux'
+					imagePath='/src/assets/coming-soon.png'
+					altText='Cloppy App'
+					class='w-full'
+				>
+					<ul class='list-disc text-muted-foreground'>
+						<li>
+							Developed a clipboard management application using <strong>Electron.js</strong> for Linux.
+						</li>
+						<li>
+							Stores up to 20 clipboard entries copied with <kbd>Ctrl</kbd>+<kbd>C</kbd>.
+						</li>
+						<li>Easy to use, with customizable keyboard shortcuts for efficient workflow.</li>
+						<li>Features both light and dark modes to suit different user preferences.</li>
 					</ul>
 				</ProjectCard>
 			</div>
